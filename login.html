@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Freshers First - Recruitment Service</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><img src="./img/logo.png" class="logo me-3"></i>Freshers First</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="services.html" class="nav-item nav-link">Our Services</a>
+                <a href="recruitments.html" class="nav-item nav-link">Job Recruitments</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="login.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Join Now</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Join Now</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Login Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Login</h6>
+                <h1 class="mb-5">Welcome Back</h1>
+            </div>
+            <div class="row g-5 mt-5">
+                <section class="user-authentication my-5">
+                    <div class="user_options-container">
+                        <div class="user_options-text">
+                            <div class="user_options-unregistered">
+                                <h2 class="user_unregistered-title">Don't have an account?</h2>
+                                <p class="user_unregistered-text">Unlock career opportunities without an account. Join us for exciting placements in Electrical & Electronics domains. No
+                                sign-up required.</p>
+                                <button class="user_unregistered-signup" id="signup-button">Sign up</button>
+                            </div>
+                
+                            <div class="user_options-registered">
+                                <h2 class="user_registered-title">Have an account?</h2>
+                                <p class="user_registered-text">Access exclusive benefits with your account. Explore job opportunities in various domains hassle-free. Sign in now for
+                                personalized support.</p>
+                                <button class="user_registered-login" id="login-button">Login</button>
+                            </div>
+                        </div>
+                
+                        <div class="user_options-forms" id="user_options-forms">
+                            <div class="user_forms-login">
+                                <h2 class="forms_title">Login</h2>
+                                <form class="forms_form">
+                                    <fieldset class="forms_fieldset">
+                                        <div class="forms_field">
+                                            <input type="email" placeholder="Email" class="forms_field-input" required autofocus />
+                                        </div>
+                                        <div class="forms_field last-child ">
+                                            <input type="password" placeholder="Password" class="forms_field-input" required />
+                                        </div>
+                                    </fieldset>
+                                    <div class="forms_buttons">
+                                        <button type="button" class="forms_buttons-forgot" id="forget-button">Forgot password?</button>
+                                        <button type="submit" class="forms_buttons-action">Login</button>
+                                        <a class="forms_buttons-mb-button" id="signup-button-mb">Sign up</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="user_forms-signup">
+                                <h2 class="forms_title">Sign Up</h2>
+                                <form class="forms_form">
+                                    <fieldset class="forms_fieldset">
+                                        <div class="row">
+                                            <div class="col-6 ">
+                                                <div class="forms_field">
+                                                    <input type="text" placeholder="First Name" class="forms_field-input" required />
+                                                </div>
+                                            </div>
+                                            <div class="col-6 ">
+                                                <div class="forms_field">
+                                                    <input type="text" placeholder="Last Name" class="forms_field-input" required />
+                                                </div>
+                                            </div>
+                                            <div class="col-6 ">
+                                                <div class="forms_field">
+                                                    <input type="email" placeholder="Email" class="forms_field-input" required />
+                                                </div>
+                                            </div>
+                                            <div class="col-6 ">
+                                                <div class="forms_field">
+                                                    <input type="text" placeholder="Mobile No" class="forms_field-input" required />
+                                                </div>
+                                            </div>
+                                            <div class="col-6 ">
+                                                <div class="forms_field">
+                                                    <input type="text" placeholder="Qualification" class="forms_field-input" required />
+                                                </div>
+                                            </div>
+                                            <div class="col-6 ">
+                                                <div class="forms_field">
+                                                    <input type="text" placeholder="Year of Experience" class="forms_field-input" required />
+                                                </div>
+                                            </div>
+                                            <div class="col-6 ">
+                                                <div class="forms_field">
+                                                    <input type="text" placeholder="Address" class="forms_field-input" required />
+                                                </div>
+                                            </div>
+                                            <div class="col-6 ">
+                                                <div class="forms_field">
+                                                    <input type="text" placeholder="City" class="forms_field-input" required />
+                                                </div>
+                                            </div>
+                                            <div class="col-6 ">
+                                                <div class="forms_field">
+                                                    <input type="text" placeholder="State" class="forms_field-input" required />
+                                                </div>
+                                            </div>
+                                            <div class="col-6 ">
+                                                <div class="forms_field">
+                                                    <input type="text" placeholder="Pincode" class="forms_field-input" required />
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="forms_field">
+                                                    <input type="file" placeholder="Documents" class="forms_field-input" required />
+                                                </div>
+                                                <small id="upload-error" class="col-sm-12 spnsmall"> Note: Please only file (eg: .docx, .doc, .pdf)</small>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="forms_field last-child ">
+                                                    <textarea type="text" placeholder="Remarks" class="forms_field-input" rows="2" required ></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <div class="forms_buttons">
+                                        <button type="submit" class="forms_buttons-action">Sign up</button>
+                                        <a class="forms_buttons-mb-button" id="login-button-mb">Login</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="user_forms-forgot">
+                                <h2 class="forms_title">Forgot Password</h2>
+                                <form class="forms_form">
+                                    <fieldset class="forms_fieldset">
+                                        <div class="forms_field last-child ">
+                                            <input type="email" placeholder="Email" class="forms_field-input" required autofocus />
+                                        </div>
+                                    </fieldset>
+                                    <div class="forms_buttons">
+                                        <button type="submit" class="forms_buttons-action">Send reset link</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+    <!-- Login End -->
+        
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-12 text-center text-md-start mb-3 mb-md-0">
+                        &copy; 2023 Copyright <a class="border-bottom" href="#">Freshers First</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Variables
+const signupButton = document.getElementById('signup-button'),
+    loginButton = document.getElementById('login-button'),
+		signupButtonMb = document.getElementById('signup-button-mb'),
+    loginButtonMb = document.getElementById('login-button-mb'),
+		forgetButton = document.getElementById('forget-button'),
+    userForms = document.getElementById('user_options-forms'),
+		loginForm = document.getElementById('user_forms-login'),
+		signUpForm = document.getElementById('user_forms-signup');
+
+// Add event listener to the "Sign Up" button
+signupButton.addEventListener('click', () => {
+	userForms.classList.remove('show-forgotPass');
+  userForms.classList.remove('bounceRight');
+  userForms.classList.add('bounceLeft');	
+}, false)
+
+// Add event listener to the "Login" button
+loginButton.addEventListener('click', () => {
+	userForms.classList.remove('show-forgotPass');
+  userForms.classList.remove('bounceLeft');
+  userForms.classList.add('bounceRight');
+}, false)
+
+// Add event listener to the "Forget Password" button
+forgetButton.addEventListener('click', () => {
+	userForms.classList.add('show-forgotPass');
+  // userForms.classList.add('bounceRight');
+  // userForms.classList.remove('bounceLeft');
+	userForms.classList.remove('show-login');
+	userForms.classList.remove('show-signup');	
+}, false)
+
+// Add event listener to the "Signup" button mobile
+signupButtonMb.addEventListener('click', () => {
+	userForms.classList.remove('show-forgotPass');
+	userForms.classList.remove('show-login');
+	userForms.classList.add('show-signup');	
+}, false)
+
+// Add event listener to the "Login" button mobile
+loginButtonMb.addEventListener('click', () => {
+	userForms.classList.remove('show-forgotPass');
+  userForms.classList.add('show-login');	
+	userForms.classList.remove('show-signup');
+}, false)
+
+        </script>
+</body>
+
+</html>
