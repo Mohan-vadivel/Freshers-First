@@ -87,137 +87,83 @@
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="text-center">
-                <h6 class="section-title bg-white text-center text-primary px-3">Login</h6>
+                <h6 class="section-title bg-white text-center text-primary px-3">Apply</h6>
                 <h1 class="mb-5">Welcome Back</h1>
             </div>
             <div class="row g-5 mt-5">
-                <section class="user-authentication my-5">
-                    <div class="user_options-container">
-                        <div class="user_options-text">
-                            <div class="user_options-unregistered">
-                                <h2 class="user_unregistered-title">Don't have an account?</h2>
-                                <p class="user_unregistered-text">Unlock career opportunities without an account. Join us for exciting placements in Electrical & Electronics domains. No
-                                sign-up required.</p>
-                                <button class="user_unregistered-signup" id="signup-button">Sign up</button>
+                <div class="col-12 col-md-6 mx-auto">
+                <form class="forms_form">
+                    <fieldset class="forms_fieldset">
+                        <div class="row">
+                            <div class="col-6 ">
+                                <div class="mb-3">
+                                    <input type="text" placeholder="First Name" class="form-control" required />
+                                </div>
                             </div>
-                
-                            <div class="user_options-registered">
-                                <h2 class="user_registered-title">Have an account?</h2>
-                                <p class="user_registered-text">Access exclusive benefits with your account. Explore job opportunities in various domains hassle-free. Sign in now for
-                                personalized support.</p>
-                                <button class="user_registered-login" id="login-button">Login</button>
+                            <div class="col-6 ">
+                                <div class="mb-3">
+                                    <input type="text" placeholder="Last Name" class="form-control" required />
+                                </div>
                             </div>
-                        </div>
-                
-                        <div class="user_options-forms" id="user_options-forms">
-                            <div class="user_forms-login">
-                                <h2 class="forms_title">Login</h2>
-                                <form class="forms_form">
-                                    <fieldset class="forms_fieldset">
-                                        <div class="forms_field">
-                                            <input type="email" placeholder="Email" class="forms_field-input" required autofocus />
-                                        </div>
-                                        <div class="forms_field last-child ">
-                                            <input type="password" placeholder="Password" class="forms_field-input" required />
-                                        </div>
-                                    </fieldset>
-                                    <div class="forms_buttons">
-                                        <button type="button" class="forms_buttons-forgot" id="forget-button">Forgot password?</button>
-                                        <button type="submit" class="forms_buttons-action">Login</button>
-                                        <a class="forms_buttons-mb-button" id="signup-button-mb">Sign up</a>
-                                    </div>
-                                </form>
+                            <div class="col-6 ">
+                                <div class="mb-3">
+                                    <input type="email" placeholder="Email" class="form-control" required />
+                                </div>
                             </div>
-                            <div class="user_forms-signup">
-                                <h2 class="forms_title">Sign Up</h2>
-                                <form class="forms_form">
-                                    <fieldset class="forms_fieldset">
-                                        <div class="row">
-                                            <div class="col-6 ">
-                                                <div class="forms_field">
-                                                    <input type="text" placeholder="First Name" class="forms_field-input" required />
-                                                </div>
-                                            </div>
-                                            <div class="col-6 ">
-                                                <div class="forms_field">
-                                                    <input type="text" placeholder="Last Name" class="forms_field-input" required />
-                                                </div>
-                                            </div>
-                                            <div class="col-6 ">
-                                                <div class="forms_field">
-                                                    <input type="email" placeholder="Email" class="forms_field-input" required />
-                                                </div>
-                                            </div>
-                                            <div class="col-6 ">
-                                                <div class="forms_field">
-                                                    <input type="text" placeholder="Mobile No" class="forms_field-input" required />
-                                                </div>
-                                            </div>
-                                            <div class="col-6 ">
-                                                <div class="forms_field">
-                                                    <input type="text" placeholder="Qualification" class="forms_field-input" required />
-                                                </div>
-                                            </div>
-                                            <div class="col-6 ">
-                                                <div class="forms_field">
-                                                    <input type="text" placeholder="Year of Experience" class="forms_field-input" required />
-                                                </div>
-                                            </div>
-                                            <div class="col-6 ">
-                                                <div class="forms_field">
-                                                    <input type="text" placeholder="Address" class="forms_field-input" required />
-                                                </div>
-                                            </div>
-                                            <div class="col-6 ">
-                                                <div class="forms_field">
-                                                    <input type="text" placeholder="City" class="forms_field-input" required />
-                                                </div>
-                                            </div>
-                                            <div class="col-6 ">
-                                                <div class="forms_field">
-                                                    <input type="text" placeholder="State" class="forms_field-input" required />
-                                                </div>
-                                            </div>
-                                            <div class="col-6 ">
-                                                <div class="forms_field">
-                                                    <input type="text" placeholder="Pincode" class="forms_field-input" required />
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="forms_field">
-                                                    <input type="file" placeholder="Documents" class="forms_field-input" required />
-                                                </div>
-                                                <small id="upload-error" class="col-sm-12 spnsmall"> Note: Please only file (eg: .docx, .doc, .pdf)</small>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="forms_field last-child ">
-                                                    <textarea type="text" placeholder="Remarks" class="forms_field-input" rows="2" required ></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                    <div class="forms_buttons">
-                                        <button type="submit" class="forms_buttons-action">Sign up</button>
-                                        <a class="forms_buttons-mb-button" id="login-button-mb">Login</a>
-                                    </div>
-                                </form>
+                            <div class="col-6 ">
+                                <div class="mb-3">
+                                    <input type="text" placeholder="Mobile No" class="form-control" required />
+                                </div>
                             </div>
-                            <div class="user_forms-forgot">
-                                <h2 class="forms_title">Forgot Password</h2>
-                                <form class="forms_form">
-                                    <fieldset class="forms_fieldset">
-                                        <div class="forms_field last-child ">
-                                            <input type="email" placeholder="Email" class="forms_field-input" required autofocus />
-                                        </div>
-                                    </fieldset>
-                                    <div class="forms_buttons">
-                                        <button type="submit" class="forms_buttons-action">Send reset link</button>
-                                    </div>
-                                </form>
+                            <div class="col-6 ">
+                                <div class="mb-3">
+                                    <input type="text" placeholder="Qualification" class="form-control" required />
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="mb-3">
+                                    <input type="text" placeholder="Year of Experience" class="form-control" required />
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="mb-3">
+                                    <input type="text" placeholder="Address" class="form-control" required />
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="mb-3">
+                                    <input type="text" placeholder="City" class="form-control" required />
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="mb-3">
+                                    <input type="text" placeholder="State" class="form-control" required />
+                                </div>
+                            </div>
+                            <div class="col-6 ">
+                                <div class="mb-3">
+                                    <input type="text" placeholder="Pincode" class="form-control" required />
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <input type="file" placeholder="Documents" class="form-control" required />
+                                    <small id="upload-error" class="col-sm-12 spnsmall"> Note: Please only file (eg: .docx, .doc,
+                                        .pdf)</small>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mb-3 last-child ">
+                                    <textarea type="text" placeholder="Remarks" class="form-control" rows="2" required></textarea>
+                                </div>
                             </div>
                         </div>
+                    </fieldset>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Apply</button>
                     </div>
-                </section>
+                </form>
+                </div>
 
             </div>
         </div>
